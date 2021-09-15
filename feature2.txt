@@ -1,2 +1,0 @@
-Feature 2 chnages
-This is bug fix
