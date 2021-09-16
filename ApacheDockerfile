@@ -3,5 +3,6 @@ MAINTAINER rnstech
 RUN yum update -y
 RUN yum install -y httpd net-tools
 RUN "echo" "This is custom index page during image creation " >> /var/www/html/index.html
+COPY welcome.html /var/www/html/
 EXPOSE 80
 ENTRYPOINT apachectl "-DFOREGROUND"
